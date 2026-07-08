@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color : rgba(211, 206, 206, 0.719);
+    display: grid;
+    place-items: center;
+}
+.container{
+    height: 500px;
+    width: 600px;
+    background-color:white;
+    box-shadow: 0px 0px 10px 0px black;
+}
+.left-panel{
+    height: 100%;
+    width: 50%;
+    background-color: hwb(240 6% 94% / 0.678);
+    float: left;
+    
+    padding: 10px;
+    
+}
+.right-panel{
+    height: 100%;
+    width: 50%;
+    background-color: hwb(0 73% 19% / 0.577);
+    float: right;
+    color : black;
+    padding: 10px;
+          /* or whatever height you want */
+    overflow-y: auto;
+   
+}
+.left-panel h2{
+    color : white;
+}
+h4 {
+    font-size: 15px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color : white;
+}
+.balance {
+    font-size: 30px;
+    color : white;
+}
+.inc-exp {
+    display: flex;
+    justify-content : center;
+    width: 100%;
+    text-align: center;
+    margin-top: 5px;
+    gap: 10px;
+
+}
+.income {
+    border-color: green;
+    border-style: solid;
+    border-width: 5px;
+    width : 50%;
+    border-radius: 5px;
+    color: green;
+    font-weight: bold;
+    
+}
+.expense {
+    border-color: red;
+    border-style: solid;
+    border-width: 5px;
+    width : 50%;
+    border-radius: 5px;
+    color: red;
+    font-weight: bold;
+}
+#transaction-form{
+    margin-top: 20px;
+}
+.description, .amount{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+}
+.btn{
+    width: 100%;
+    height: 30px;
+    background-color: hwb(320 25% 74% / 0.577);
+    color: white;
+    border-radius: 3px;
+}
+ul {
+    list-style-type: none;
+    margin-top: 20px;
+    
+}
+li {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 8px;
+    border : 1px solid rgb(136, 130, 130);
+    padding: 5px;
+    justify-content: space-between;
+    display: flex;
+    font : bold 15px Arial, Helvetica, sans-serif;
+    
+}
+li.inc {
+    border-left: 5px solid green;
+} 
+li.exp {
+    border-left: 5px solid red;
+}
+.delete-btn{
+    float: right;
+    background-color: red;
+    color: white;
+    border-radius: 3px;
+    padding: 2px 5px;
+   
+    display   : none;
+}
+li:hover .delete-btn{
+    display : inline-block;
+}
+li.span {
+    float: right;
+}
+::-webkit-scrollbar {
+    width: 4px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb {
+    background-color: #1f1d1d; 
+    height: 10px;
+    
+}

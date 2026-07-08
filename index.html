@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="left-panel" class="left-panel">
+            <h2>Income Expense Tracker</h2>
+            <h4>Your Balance</h4>
+            <h3 class = "balance" id="balance">$0.00</h3>
+            <div class ="inc-exp" id = "inc-exp">
+                <div class="income">
+                    <h4>Income</h4>
+                    <p id="income-amount" class="amount plus">$0.00</p>
+                </div>
+                <div class="expense">
+                    <h4>Expense</h4>
+                    <p id="expense-amount" class="amount minus">$0.00</p>
+                </div>
+            </div>
+            <form id="transaction-form">
+                <input type="text" id="description" class="description" placeholder="Enter description" required>
+                <input type="number" id="amount" class="amount" placeholder="Enter amount" required>
+                <button type="submit" id="add-transaction" class="btn">Add Transaction</button>
+
+            </form> 
+            
+        </div>
+        <div id="right-panel" class="right-panel">
+            
+            <h2>Transaction History</h2>
+            <ul id="transaction-list" class="transaction-list">
+                <!-- Transactions will be added here dynamically -->
+                <!--
+                 <li class = "inc">Insurance <span>100.00</span>
+                    <button class = "delete-btn">x</button>
+                </li>
+                <li class = "exp">fruits <span>-50.00</span>
+                    <button class = "delete-btn">x</button>
+                </li>
+                <li class = "exp">fruits <span>-50.00</span>
+                    <button class = "delete-btn">x</button>
+                </li>
+                --->
+                
+            </ul>
+
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
